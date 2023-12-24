@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02 Solution</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+        }
+        nav{
+            width: 100%;
+            min-height: 70px;
+            background-color: #0f1b33;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        ul li a{
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            transition: .5s;
+        }
+        ul li a:hover{
+           color: aqua;
+           font-size: 22px;
+        }
+        button{
+            padding: 10px 16px;
+            background-color: #0851d8;
+            color: aliceblue;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            width: 120px;
+            border-radius: 10px;
+            
+        }
+        .bars{
+            display: none;
+        }
+        .bars span{
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin: 5px 0;
+            background-color: #ffffff;
+        }
+        .flex{
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .flex .left{
+            width: 40%;
+        }
+        .flex h2{
+            font-size: 2.2rem;
+        }
+        .flex h3{
+            font-size: 3rem;
+            color: #197cf4;
+            margin: .5rem 0;
+        }
+        .flex .desc{
+            font-size: 1.5rem;
+            color: #197cf4;
+            margin: .5rem 0;
+        }
+        .flex .about_card{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            width: 80%;
+        }
+        .flex img{
+            width: 450px;
+        }
+
+        @media screen and (max-width:900px){
+            ul{
+                display: none;
+            }
+            button{
+                display: none;
+            }
+            nav{
+                justify-content: space-around;
+            }
+            .bars{
+                display: block;
+            }
+            .flex .left{
+              width: 90%;
+            }
+            .flex .about_card{
+                width: 100%;
+            }
+            .flex img{
+                width: 250px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="" width="50px">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button>Login</button>
+        <!-- mobile btn -->
+        <div class="bars">
+            <span class="line_one"></span>
+            <span class="line_two"></span>
+            <span class="line_three"></span>
+        </div>
+    </nav>
+
+    <section>
+        <div class="flex">
+            <div class="left">
+                <h2>Say Hi To</h2>
+                <h3>One Card</h3>
+                <p class="desc">Co-branded Card Issuers :</p>
+                <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="">
+                <p class="about_card">India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+            </div>
+            <div class="right">
+                <video width="500" height="500" controls autoplay muted>
+                    <source src="./vd/say_hi_2x_d3_.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+        
+        
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 01 Solution</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+        }
+        nav{
+            width: 100%;
+            min-height: 70px;
+            background-color: #0f1b33;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        ul li a{
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            transition: .5s;
+        }
+        ul li a:hover{
+           color: aqua;
+           font-size: 22px;
+        }
+        button{
+            padding: 10px 16px;
+            background-color: #0851d8;
+            color: aliceblue;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            width: 120px;
+            border-radius: 10px;
+            
+        }
+        .bars{
+            display: none;
+        }
+        .bars span{
+            display: block;
+            width: 30px;
+            height: 2px;
+            margin: 5px 0;
+            background-color: #ffffff;
+        }
+
+        @media screen and (max-width:900px){
+            ul{
+                display: none;
+            }
+            button{
+                display: none;
+            }
+            nav{
+                justify-content: space-around;
+            }
+            .bars{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="" width="50px">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button>Login</button>
+        <!-- mobile btn -->
+        <div class="bars">
+            <span class="line_one"></span>
+            <span class="line_two"></span>
+            <span class="line_three"></span>
+        </div>
+    </nav>
+</body>
+</html>

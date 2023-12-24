@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 03 Solution </title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+        }
+        .box{
+            margin: auto;
+            width: 350px;
+            margin-top: 4rem;
+            min-height: 350px;
+            padding: 1rem;
+            background: linear-gradient(to right, #329cf3, #2b517c);
+            border-radius: 20px;
+            border: 4px solid black;
+            cursor: pointer;
+            transform: rotate(-40deg);
+            transition: .5s;
+            transform-origin: center;
+        }
+        .box:hover{
+            transform: rotate(0deg);
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2.5rem 0;
+        }
+        .title p:first-child{
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .title p:nth-child(2){
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        .list{
+            margin: 1rem;
+        }
+        .list h2{
+           font-size: 2rem;
+           margin: 1.5rem 0;
+        }
+        .list ul{
+            margin: 0 3rem;
+            font-weight: 500;
+        }
+        button{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: .7rem;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 1rem 0;
+            cursor: pointer;
+            background: linear-gradient(to right, #81b9a2, #4cbb4c);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="title">
+            <p>#01</p>
+            <p>Created On : 15/09/2023</p>
+        </div>
+        <div class="list">
+            <h2>Important dates</h2>
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+        </div>
+        <button>Mark As Done</button>
+    </div>
+</body>
+</html>

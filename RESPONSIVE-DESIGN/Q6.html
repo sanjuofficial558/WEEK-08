@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 06 Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background-color: #ffe2e2;
+            min-height: 100vh;
+            color: aliceblue;
+            position: relative;
+        }
+        /* footer{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-end;
+        } */
+        .footer_menu{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            min-height: 500px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #1d1d1d;
+            padding: 10px;
+            gap: .5rem;
+        }
+        .footer_menu h2{
+            font-size: 2.3rem;
+            margin-bottom: 2rem;
+        }
+        .footer_menu .about{
+            width: 350px;
+        }
+        .footer_menu .about p{
+            font-size: 1.3rem;
+            color: #c7c7c7;
+            text-align: justify;
+            line-height: 2.8rem;
+        }
+        .footer_menu .right{
+            width: 350px;
+        }
+        .footer_menu .right input,
+        .footer_menu .right button{
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 1rem;
+            margin: .3rem 0;
+            outline: none;
+            border-radius: .5rem;
+        }
+        .footer_menu .right button{
+            background-color: #1e88eb;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        ul li{
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+        ul li a{
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #c7c7c7;
+            transition: color .3s;
+        }
+        ul li a:hover{
+            color: #1e88eb;
+        }
+        @media screen and (max-width:1000px){
+            .footer_menu .about, 
+            .footer_menu .navigate,
+            .footer_menu .support, 
+            .footer_menu .right{
+                flex: 1 1 300px;
+            }
+            .footer_menu .right input,
+            .footer_menu .right button{
+                width: 100% !important;
+            }
+        }
+        @media screen and (max-width:700px){
+            .footer_menu .about, 
+            .footer_menu .navigate,
+            .footer_menu .support, 
+            .footer_menu .right{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer_menu">
+            <div class="about">
+                <h2>One Card</h2>
+                <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity,
+                    transparency, and giving back control to the user.</p>
+            </div>
+            <div class="navigate">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Newsletter</h2>
+                <input type="email" placeholder="Your email id here" required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
